@@ -1,0 +1,276 @@
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| 11. Slider 
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+/*==================================================
+===| 11. Slider
+===================================================*/
+.slider1 {
+
+    &__height {
+        height: 800px;
+
+        @include tab1 {
+            height: 600px;
+        }
+    }
+
+    &__img-01 {
+        background: url(../img/hero/hero-01.jpg);
+        @include bg_fixed;
+    }
+
+    &__img-02 {
+        background: url(../img/hero/hero-06.jpg);
+        @include bg_fixed;
+    }
+
+    &__img-03 {
+        background: url(../img/hero/hero-02.jpg);
+        @include bg_fixed;
+    }
+
+    &__img-04 {
+        background: url(../img/hero/hero-04.jpg);
+        @include bg_fixed;
+    }
+
+    &__item {
+
+        @include desktop1_middle {
+            padding-left: 100px;
+        }
+
+        @include laptop1 {
+            padding-left: 10px;
+        }
+
+        @include laptop2 {
+            padding-left: 0px;
+        }
+    }
+
+    &__content {
+
+        h3 {
+            font-weight: bold;
+            font-size: 80px;
+            line-height: 80px;
+            color: transparent;
+            -webkit-text-stroke: 1px $secondary_color_01;
+
+            @include tab1 {
+                font-size: 60px;
+                line-height: 60px;
+            }
+
+            @include phone2 {
+                font-size: 45px;
+                line-height: 45px;
+            }
+        }
+
+        h2 {
+            font-size: 80px;
+            font-weight: bold;
+            line-height: 80px;
+
+            @include tab1 {
+                font-size: 60px;
+                line-height: 60px;
+            }
+
+            @include phone2 {
+                font-size: 45px;
+                line-height: 45px;
+            }
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 28px;
+            position: relative;
+            padding-left: 22px;
+
+            @include tab1 {
+                font-size: 16px;
+            }
+
+            &::before {
+                position: absolute;
+                left: 0px;
+                height: 45px;
+                width: 4px;
+                content: '';
+                background: $primary_color_01;
+                top: 7px;
+            }
+        }
+    }
+
+
+
+    // owl-carousel owl-nav button
+    .owl-carousel .owl-nav button.owl-prev,
+    .owl-carousel .owl-nav button.owl-next {
+        height: 80px;
+        width: 82px;
+        line-height: 84px;
+        background: #fff;
+        font-size: 24px;
+        color: $secondary_color_01;
+        border-radius: 0px;
+        text-align: center;
+        position: absolute;
+        box-shadow: 0px 16px 32px 0px rgba(32, 85, 125, 0.1);
+        top: 45%;
+        left: 0px;
+        transform: translateY(-50%);
+        transition: .3s;
+
+        @include laptop2 {
+            display: none;
+        }
+
+        &:hover {
+            background: $primary_color_01;
+            color: #fff;
+        }
+    }
+
+    .owl-theme .owl-nav {
+        margin: 0px;
+
+        button {
+            margin: 0px;
+        }
+    }
+
+    .owl-carousel .owl-nav button.owl-next {
+        left: auto;
+        right: 0px;
+    }
+}
+
+
+.slider1.home2 {
+
+    .slider1__content {
+
+        h3 {
+            -webkit-text-stroke: 1px #fff;
+        }
+
+        h2 {
+            color: #fff;
+        }
+
+        p {
+            color: #fff;
+        }
+    }
+} 
+
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| 12. Hero
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+/*==================================================
+===| 12. Hero
+===================================================*/
+
+
+.hero1 {
+    background: url(../../assets/img/hero/hero-03.jpg);
+    @include bg_fixed;
+
+    &__height {
+        height: 950px;
+
+        @include laptop1 {
+            height: 750px;
+        }
+
+        @include phone1 {
+            height: 700px;
+        }
+
+        @include phone2_middle {
+            height: 600px;
+        }
+    }
+
+    &__wrapper {
+        padding-top: 80px;
+    }
+
+    &__content {
+
+        h3 {
+            font-size: 120px;
+            line-height: 100px;
+            letter-spacing: -2px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: transparent;
+            -webkit-text-stroke: 1px #fff;
+
+            @include laptop1 {
+                font-size: 80px;
+                line-height: 80px;
+            }
+
+            @include phone1 {
+                font-size: 60px;
+                line-height: 60px;
+            }
+
+            @include phone2_middle {
+                font-size: 40px;
+                line-height: 40px;
+                letter-spacing: 0px;
+            }
+        }
+
+        h2 {
+            font-size: 100px;
+            color: #fff;
+            text-transform: uppercase;
+            line-height: 1;
+            font-weight: bold;
+            letter-spacing: -2px;
+
+            @include laptop1 {
+                line-height: 70px;
+                font-size: 70px;
+            }
+
+            @include phone1 {
+                font-size: 50px;
+                line-height: 50px;
+            }
+
+            @include phone2_middle {
+                font-size: 35px;
+                line-height: 35px;
+                letter-spacing: 0px;
+            }
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 28px;
+            color: #fff;
+            margin-top: 15px;
+
+            @include phone1 {
+                font-size: 16px;
+                line-height: 26px;
+            }
+        }
+    }
+}

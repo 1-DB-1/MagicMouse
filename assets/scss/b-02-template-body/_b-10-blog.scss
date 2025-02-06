@@ -1,0 +1,956 @@
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| 16. News And Blog
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+/*==================================================
+===| 16. News And Blog
+===================================================*/
+
+.news1 {
+    background: #00235a;
+
+    &.home2 {
+        background: #f6f9ff;
+
+        .title_style1 {
+
+            h2 {
+                color: $heading_color_01;
+            }
+        }
+
+        .text-border-title1 {
+            -webkit-text-stroke: 1px #CED7E9;
+        }
+    }
+
+    .text-border-title1 {
+        -webkit-text-stroke: 1px rgba(244, 244, 244, 0.1);
+    }
+
+    .title_style1 {
+
+        h2 {
+            color: #fff;
+        }
+    }
+
+    &__item {
+        background: #fff;
+
+    }
+
+    &__thumb {
+        position: relative;
+
+        a {
+            position: absolute;
+            top: 40px;
+            left: 40px;
+            display: inline-block;
+            color: #fff;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            padding: 5px 26px;
+            text-transform: uppercase;
+            font-size: 15px;
+            font-weight: bold;
+            line-height: 26px;
+
+            @include phone2_middle {
+                left: 25px;
+                top: 25px;
+            }
+
+            &:hover {
+                background: $primary_color_01;
+                border: 2px solid $primary_color_01;
+            }
+        }
+    }
+
+    &__content {
+        padding: 35px 38px 0px;
+
+        @include desktop3_4 {
+            padding: 35px 25px 0px;
+        }
+
+        @include phone2_middle {
+            padding: 25px 25px 0px;
+        }
+
+        h3 {
+            font-size: 24px;
+            line-height: 34px;
+            letter-spacing: -1px;
+            text-transform: uppercase;
+
+            @include phone2_middle {
+                font-size: 20px;
+                line-height: 30px;
+                letter-spacing: 0px;
+            }
+        }
+
+        p {
+            font-size: 14px;
+            margin-bottom: 36px;
+
+            @include phone2_middle {
+                margin-bottom: 25px;
+            }
+        }
+    }
+
+    &__data {
+        border-top: 1px solid #c5dcff;
+        padding: 16px 0px;
+
+        span {
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+
+            &:first-child {
+                margin-right: 25px;
+
+                @include phone2_middle {
+                    margin-right: 15px;
+                }
+            }
+
+            a {
+                color: $secondary_color_01;
+
+                &:hover {
+                    color: $primary_color_01;
+                }
+            }
+
+            i {
+                font-size: 14px;
+                color: $primary_color_01;
+                margin-right: 3px;
+            }
+        }
+    }
+
+
+    // owl-carousel owl-nav button
+    .owl-carousel .owl-nav button.owl-prev,
+    .owl-carousel .owl-nav button.owl-next {
+        background: #fff;
+        font-size: 15px;
+        font-weight: bold;
+        border-radius: 0px;
+        display: inline-block;
+        position: absolute;
+        top: -130px;
+        right: 0px;
+        letter-spacing: -1px;
+        padding: 14px 40px !important;
+        color: $secondary_color_01;
+        margin: 0px;
+        transition: 0.3s;
+
+        &:hover {
+            background: $primary_color_01;
+            color: #fff;
+        }
+
+        @include laptop1 {
+            display: none;
+        }
+    }
+
+    .owl-carousel .owl-nav button {
+
+        i {
+            font-size: 14px;
+        }
+
+        &.owl-prev {
+
+            i {
+                margin-right: 5px;
+            }
+        }
+
+        &.owl-next {
+
+            i {
+                margin-left: 5px;
+            }
+        }
+    }
+
+    .owl-carousel .owl-nav button.owl-prev {
+        right: 150px;
+    }
+
+    &.other_page1 {
+
+        .news1__content {
+            border-left: 1px solid #c5dcff;
+        }
+    }
+}
+
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| Blog
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+
+.blog1 {
+
+    &.other_page1 {
+
+        .news1__content {
+            border: 1px solid #c5dcff;
+            border-top: none;
+        }
+    }
+
+    &__item {
+        margin-bottom: 40px;
+
+        &--thumb {
+            position: relative;
+
+            a {
+                position: absolute;
+                display: inline-block;
+                left: 0px;
+                top: 0px;
+                background: $primary_color_01;
+                width: 80px;
+                height: 80px;
+                border-radius: 100px;
+                text-align: center;
+                line-height: 85px;
+                font-size: 14px;
+                color: #fff;
+                @include middle;
+            }
+        }
+
+        &--data {
+            margin-bottom: 19px;
+
+            a {
+                font-size: 14px;
+                color: $secondary_color_01;
+                display: inline-block;
+                margin-right: 28px;
+
+                i {
+                    color: $primary_color_01;
+                    margin-right: 5px;
+                }
+            }
+        }
+
+        &--content {
+            border: 2px solid #EDEDED;
+            border-top: none;
+            padding: 45px 50px 50px;
+
+            @include phone1 {
+                padding: 35px 30px 40px;
+            }
+
+            @include phone2_middle {
+                padding: 25px 20px 30px;
+            }
+
+            h3 {
+                font-size: 32px;
+                text-transform: uppercase;
+                line-height: 48px;
+                letter-spacing: -1px;
+                margin-bottom: 13px;
+
+                @include tab1 {
+                    font-size: 26px;
+                    line-height: 36px;
+                }
+
+                @include phone2_middle {
+                    font-size: 22px;
+                    line-height: 32px;
+                }
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 26px;
+                margin-bottom: 24px;
+            }
+        }
+
+        &--single {
+
+            .blog1__item--content {
+                border-top: 2px solid #EDEDED;
+            }
+        }
+
+        &--quote {
+            background: url(../img/png-img/png-img-21.png);
+            @include bg_fixed;
+            background-color: #fff6f2;
+            border-left: 10px solid $primary_color_01;
+            padding: 45px 50px 25px 40px;
+            position: relative;
+            margin-bottom: 60px;
+
+            @include phone2 {
+                padding: 35px 30px 15px 30px;
+                border-left: 5px solid $primary_color_01;
+            }
+
+            &-thumb {
+                position: absolute;
+                top: 54px;
+                left: 40px;
+
+                @include phone1 {
+                    display: none;
+                }
+            }
+
+            &-content {
+                padding-left: 107px;
+
+                @include phone1 {
+                    padding-left: 0px;
+                }
+
+                h3 {
+                    font-size: 32px;
+                    text-transform: uppercase;
+                    letter-spacing: -1px;
+                    line-height: 48px;
+                    margin-bottom: 12px;
+
+                    @include tab1 {
+                        font-size: 26px;
+                        line-height: 36px;
+                    }
+                }
+            }
+        }
+
+        &--info {
+            border-top: 1px solid #EEEEEE;
+            padding-top: 30px;
+
+            .col-6 {
+
+                @include phone2 {
+                    max-width: 100%;
+                    flex: none;
+                }
+            }
+
+            &-wrapper {
+                position: relative;
+
+                h6 {
+                    padding-left: 55px;
+                    padding-top: 9px;
+                }
+            }
+
+            &-thumb {
+                height: 40px;
+                width: 40px;
+                position: absolute;
+                left: 0px;
+                top: 0px;
+
+                img {
+                    border-radius: 100px;
+                }
+            }
+
+            &-btn {
+                @include phone2 {
+                    display: none;
+                }
+
+                a {
+                    background: $primary_color_01;
+                    display: inline-block;
+                    font-size: 14px;
+                    font-weight: bold;
+                    color: #fff;
+                    padding: 4px 30px;
+                    border-radius: 50px;
+                    margin-top: 8px;
+
+                    &:hover {
+                        background: $secondary_color_01;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.pagination {
+
+    ul {
+        display: inline-block;
+
+        li {
+            display: inline-block;
+
+            a {
+                font-size: 14px;
+                font-weight: bold;
+                color: $font_color_01;
+                display: inline-block;
+                width: 50px;
+                height: 50px;
+                border: 2px solid #EDEDED;
+                text-align: center;
+                line-height: 50px;
+                border-radius: 100px;
+                margin: 0px 4px;
+
+                @include phone2 {
+                    margin: 0px 4px 8px;
+                }
+
+                &:hover {
+                    color: #fff;
+                    border-color: $primary_color_01;
+                    background: $primary_color_01;
+                }
+            }
+
+            &.active {
+
+                a {
+                    background: $primary_color_01;
+                    border-color: $primary_color_01;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.blog_details {
+
+    &__wrapper {
+        border: 2px solid #EDEDED;
+        padding: 45px 50px 50px;
+
+        @include phone1 {
+            padding: 40px 40px 40px;
+        }
+
+        @include phone2_middle {
+            padding: 40px 20px;
+        }
+    }
+
+    &__content {
+
+        h2 {
+            font-size: 32px;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+            line-height: 46px;
+
+            @include phone1 {
+                font-size: 26px;
+                line-height: 36px;
+                letter-spacing: 0px;
+            }
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 26px;
+        }
+
+        h3 {
+            font-size: 30px;
+            letter-spacing: -1px;
+            text-transform: uppercase;
+            margin-bottom: 25px;
+
+            @include phone1 {
+                font-size: 24px;
+                line-height: 26px;
+                letter-spacing: 0px;
+            }
+        }
+    }
+
+    &__regular-title {
+        font-family: $font-primary;
+        font-weight: 500;
+        text-transform: none !important;
+    }
+
+    &__list {
+
+        ul {
+            padding-left: 30px;
+
+            @include tab1 {
+                padding-left: 0px;
+            }
+
+            li {
+                position: relative;
+                margin-bottom: 6px;
+
+                &::before {
+                    position: absolute;
+                    content: '\f00c';
+                    @include font_awesome;
+                    color: $primary_color_01;
+                    font-size: 15px;
+                }
+
+                span {
+                    padding-left: 30px;
+                }
+            }
+        }
+    }
+
+    &__quote {
+        background: #F3F5FF;
+        position: relative;
+        padding: 55px 50px 30px;
+        margin-top: 35px;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        overflow: hidden;
+
+        @include phone1 {
+            padding: 30px 20px;
+        }
+
+        &--thumb {
+            position: absolute;
+            top: 38px;
+            right: 38px;
+            width: 190px;
+            z-index: 1;
+
+            @include phone1 {
+                width: 120px;
+            }
+        }
+
+        &--content {
+            position: relative;
+            z-index: 10;
+
+            p {
+                font-size: 14px;
+                font-weight: bold;
+                color: $primary_color_01;
+            }
+
+            h3 {
+                font-size: 28px;
+                line-height: 38px;
+                letter-spacing: -1px;
+
+                @include tab1 {
+                    font-size: 22px;
+                    line-height: 32px;
+                }
+
+                @include phone1 {
+                    margin-bottom: 0px;
+                }
+
+                @include phone2_middle {
+                    font-size: 20px;
+                    line-height: 28px;
+                }
+            }
+        }
+    }
+
+    .service_details__filter {
+        padding-left: 0px;
+        border-bottom: 1px solid #E1E6FF;
+        padding-bottom: 37px;
+        margin-bottom: 45px;
+
+    }
+
+    .blog_details__item {
+        border-bottom: 1px solid #E1E6FF;
+        padding-bottom: 18px;
+        margin-bottom: 35px;
+    }
+
+    .blog_details__thumb1 {
+
+        @include tab1 {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__tags {
+        border-bottom: 1px solid #E1E6FF;
+        padding-bottom: 40px;
+        margin-bottom: 50px;
+
+        h4 {
+            font-size: 20px;
+            line-height: 26px;
+            letter-spacing: -1px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        &--left {
+
+            @include tab1 {
+                margin-bottom: 30px;
+            }
+
+            a {
+                display: inline-block;
+                font-size: 12px;
+                font-weight: bold;
+                color: $secondary_color_01;
+                background-color: #EFEFEF;
+                text-transform: uppercase;
+                padding: 6px 18px;
+                border-radius: 100px;
+                margin-bottom: 10px;
+
+                &:hover {
+                    background-color: $primary_color_01;
+                    color: #fff;
+                }
+
+                @include not_last_child {
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        &--right {
+
+            a {
+                font-size: 18px;
+                color: #B5BECC;
+                display: inline-block;
+                margin-bottom: 10px;
+
+                @include not_last_child {
+                    margin-right: 25px;
+                }
+
+                &:hover {
+                    color: $primary_color_01;
+                }
+            }
+        }
+    }
+
+    &__post {
+
+        h3 {
+            font-size: 26px;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+            margin-bottom: 33px;
+        }
+
+        &--content {
+            padding: 35px 40px 20px;
+            box-shadow: 0px 8px 16px 0px rgba(93, 93, 93, 0.06);
+
+            @include phone2_middle {
+                padding: 30px 25px 20px;
+            }
+
+            h4 {
+                font-size: 20px;
+                line-height: 30px;
+                text-transform: uppercase;
+                letter-spacing: -1px;
+            }
+
+            p {
+                font-size: 14px;
+                line-height: 26px;
+            }
+        }
+
+        &--data {
+            margin-bottom: 8px;
+
+            a {
+                font-size: 14px;
+                color: $primary_color_01;
+
+                span {
+                    color: $secondary_color_01;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+
+    &__writer {
+        border: 2px solid #E1E6FF;
+        padding: 40px;
+        position: relative;
+
+        @include phone2_middle {
+            border: none;
+        }
+
+        @include phone2 {
+            padding: 35px 25px;
+        }
+
+        @include phone2_middle {
+            padding: 10px 0px;
+        }
+
+        &--thumb {
+            position: absolute;
+            top: 40px;
+            left: 40px;
+            width: 180px;
+
+            @include tab1 {
+                width: 60px;
+            }
+
+            @include phone2 {
+                left: 25px;
+            }
+
+            @include phone2_middle {
+                top: 10px;
+                left: 0px;
+            }
+        }
+
+        &--content {
+            min-height: 200px;
+            padding-left: 220px;
+            padding-top: 13px;
+
+            @include tab1 {
+                padding-left: 80px;
+                padding-top: 0px;
+            }
+
+            span {
+                font-size: 12px;
+                font-weight: bold;
+                color: $primary_color_01;
+                display: block;
+                margin-bottom: 7px;
+            }
+
+            h4 {
+                font-size: 30px;
+                text-transform: uppercase;
+                letter-spacing: -1px;
+                margin-bottom: 13px;
+
+                @include tab1 {
+                    font-size: 22px;
+                    line-height: 32px;
+                }
+            }
+
+            p {
+                font-size: 14px;
+                line-height: 26px;
+                margin: 0px;
+            }
+        }
+    }
+
+    &__comments {
+
+        h3 {
+            font-size: 26px;
+            letter-spacing: -1px;
+            text-transform: uppercase;
+            margin-bottom: 35px;
+        }
+
+        &--item {
+            position: relative;
+            min-height: 100px;
+            border-bottom: 1px solid #EFF2FF;
+            padding-bottom: 8px;
+            margin-bottom: 30px;
+
+            &.reply {
+                padding-left: 130px;
+
+                @include tab1 {
+                    padding-left: 30px;
+                }
+
+                @include phone2_middle {
+                    padding-left: 0px;
+                }
+            }
+        }
+
+        &--thumb {
+            position: absolute;
+            width: 100px;
+            border-radius: 100px;
+            overflow: hidden;
+
+            @include tab1 {
+                width: 60px;
+            }
+        }
+
+        &__content {
+            padding-left: 130px;
+
+            @include tab1 {
+                padding-left: 80px;
+            }
+
+            h5 {
+                font-size: 18px;
+                text-transform: uppercase;
+            }
+
+            span {
+                font-size: 12px;
+                font-weight: bold;
+                color: $primary_color_01;
+                display: block;
+                margin-bottom: 20px;
+            }
+
+            a {
+                position: absolute;
+                right: 0px;
+                top: 0px;
+                display: inline-block;
+                font-size: 14px;
+                color: $secondary_color_01;
+                font-weight: bold;
+                border: 2px solid #F4F4FF;
+                padding: 8px 24px;
+                border-radius: 50px;
+
+                @include phone2 {
+                    display: none;
+                }
+
+                &:hover {
+                    color: #fff;
+                    background: $primary_color_01;
+                    border-color: $primary_color_01;
+                }
+            }
+
+            p {
+                font-size: 14px;
+                line-height: 24px;
+            }
+        }
+    }
+
+
+    &__addcomment {
+        margin-top: 45px;
+
+        h3 {
+            font-size: 26px;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+            margin-bottom: 33px;
+        }
+
+        &--form {
+            background: #F6F9FF;
+            padding: 50px;
+
+            @include phone2 {
+                padding: 45px 25px;
+            }
+
+            @include phone2_middle {
+                padding: 0px;
+                background: #fff;
+            }
+
+            a.site__btn1 {
+                margin-top: 30px;
+                border-radius: 50px;
+                text-transform: capitalize;
+                padding: 19px 60px;
+
+                @include phone2_middle {
+                    padding: 18px 40px;
+                }
+            }
+        }
+
+        &--item {
+            position: relative;
+
+            .form-control {
+                border: none;
+                padding: 30px 30px;
+
+                &::placeholder {
+                    font-size: 14px;
+                    color: $secondary_color_01;
+                    text-transform: inherit;
+                }
+
+                @include phone2_middle {
+                    border: 2px solid #EDEDED;
+                    padding: 30px 20px;
+                }
+            }
+
+            textarea.form-control {
+                padding: 20px 30px;
+
+                @include phone2_middle {
+                    padding: 20px;
+                }
+            }
+
+            i {
+                position: absolute;
+                right: 30px;
+                top: 21px;
+                color: $primary_color_01;
+                font-size: 14px;
+
+                @include phone2_middle {
+                    display: none;
+                }
+            }
+        }
+    }
+}

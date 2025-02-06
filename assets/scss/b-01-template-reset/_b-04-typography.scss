@@ -1,0 +1,108 @@
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| Typography
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+
+
+
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| 01. Google Font
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+/*==================================================
+===| 01. Google Font
+===================================================*/
+
+@import url('https://fonts.googleapis.com/css?family=Exo:300,400,400i,500,500i,600,700|Roboto:300,400,400i,500,500i,700&display=swap');
+
+/*
+font-family: 'Exo', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+$font-display: 'Exo', sans-serif;
+$font-primary: 'Roboto', sans-serif;
+
+@import url('fontawesome.css');
+@import url('../webfonts/themify-icons/themify-icons.css');
+@import url('../webfonts/icofont/icofont.min.css');
+@import url('owl.carousel.min.css');
+@import url('owl.theme.default.css');
+@import url('animate.css');
+@import url('slick.css');
+@import url('nice-select.css');
+@import url('jquery.fancybox.css');
+@import url('jquery-ui.css');
+@import url('default.css');
+
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| 02. Reset CSS
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+/*==================================================
+===| 02. Reset CSS
+===================================================*/
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+html,
+body {
+    min-height: 100%;
+    // user-select: none;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    color: inherit;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+i {
+    font-style: normal;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}

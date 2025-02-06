@@ -1,0 +1,560 @@
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| 13. Services
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+/*==================================================
+===| 13. Services
+===================================================*/
+
+.features1 {
+    background: url(../img/bg/bg-01.jpg);
+    @include bg_fixed;
+
+    &__item {
+        position: relative;
+        padding-right: 20px;
+
+        @include desktop3 {
+            padding-right: 0px;
+        }
+    }
+
+    &__thumb {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        border-radius: 100%;
+        box-shadow: 0px 30px 40px 0px rgba(32, 85, 125, 0.1);
+
+        img:nth-child(2) {
+            position: absolute;
+            left: 18px;
+            top: 21px;
+        }
+    }
+
+    &__item--text {
+        padding-left: 128px;
+
+        @include phone2_middle {
+            padding-left: 105px;
+        }
+
+        h4 {
+            font-size: 24px;
+            text-transform: uppercase;
+            margin-bottom: 11px;
+
+            @include phone1 {
+                font-size: 20px;
+            }
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 26px;
+        }
+    }
+}
+
+
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| key_features
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+
+.key_features1 {
+
+    &__thumb-1 {
+        background: url(../img/bg/bg-02.jpg);
+        height: 100%;
+        width: auto;
+        @include bg_fixed;
+        
+
+        @include desktop3 {
+            height: 500px;
+        }
+    }
+
+    &__thumb-2 {
+        background: #00235a;
+        height: 700px;
+
+        @include desktop3 {
+            height: 600px;
+        }
+
+        @include tab1 {
+            height: auto;
+        }
+
+        &.key_features1__thumb-4 {
+            background: url(../img/png-img/png-img-06.png);
+            height: 700px;
+            @include bg_fixed;
+
+            @include desktop3 {
+                height: 600px;
+            }
+
+            @include tab1 {
+                height: auto;
+            }
+
+            .key_features1__item--content {
+
+                h4 {
+                    color: $font_color_01;
+                }
+
+                p {
+                    color: $font_color_01;
+                }
+            }
+
+            a {
+                background: #fff;
+                border-color: #fff;
+                color: $font_color_01;
+
+                &:hover {
+                    color: #fff;
+                    background: $primary_color_01;
+                    border-color: $primary_color_01;
+                }
+            }
+        }
+    }
+
+    &__thumb-3 {
+        background: linear-gradient(rgba(255, 94, 20, 0.9), rgba(255, 94, 20, 0.9)), url(../img/bg/bg-03.jpg);
+        height: 700px;
+        @include bg_fixed;
+
+        @include desktop3 {
+            height: 600px;
+        }
+
+        @include tab1 {
+            height: auto;
+        }
+    }
+
+    &__item {
+        padding: 100px 60px;
+        position: relative;
+        height: 100%;
+
+        @include desktop1_middle {
+            padding: 100px 40px;
+        }
+
+        @include desktop3 {
+            padding: 100px 60px;
+        }
+
+        @include laptop1 {
+            padding: 80px 60px;
+        }
+
+        @include laptop2 {
+            padding: 70px 40px;
+        }
+
+        @include phone2_middle {
+            padding: 70px 30px;
+        }
+
+        &--thumb {
+            margin-bottom: 35px;
+
+            img {
+                width: 99px;
+                height: auto;
+            }
+        }
+
+        &--content {
+
+            h4 {
+                color: #fff;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 30px;
+                line-height: 40px;
+                letter-spacing: -1px;
+                margin-bottom: 16px;
+
+                @include phone2_middle {
+                    font-size: 25px;
+                }
+            }
+
+            p {
+                color: #fff;
+
+                @include tab1 {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+
+        a {
+            position: absolute;
+            bottom: 100px;
+            color: #fff;
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            border: 1px solid #fff;
+            text-align: center;
+            line-height: 48px;
+            background: transparent;
+
+            @include tab1 {
+                position: relative;
+                bottom: 0px;
+            }
+
+            &:hover {
+                background: #fff;
+                color: $secondary_color_01;
+            }
+        }
+    }
+}
+
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| Service
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+
+.service1 {
+    background: url(../img/png-img/png-img-11.png);
+    @include bg_fixed;
+
+    &.other_page1 {
+        background: #fff;
+
+        .title_style1 {
+
+            h5 {
+                color: $primary_color_01;
+            }
+
+            h2 {
+                color: $heading_color_01;
+            }
+        }
+
+        .service1__item {
+            border: 2px solid #e2edff;
+            transition: 0.3s;
+
+            &:hover {
+                border-color: $primary_color_01;
+            }
+        }
+    }
+
+    .title_style1 {
+
+        h5,
+        h2 {
+            color: #fff;
+        }
+    }
+
+    &__item {
+        background: #fff;
+        position: relative;
+        padding: 60px 30px 55px;
+
+        span {
+            position: absolute;
+            z-index: 10;
+            font-size: 150px;
+            letter-spacing: -3px;
+            top: 0px;
+            right: 20px;
+            font-family: $font-primary;
+            line-height: 1;
+            font-weight: bold;
+            color: transparent;
+            -webkit-text-stroke: 1px #f4f4f4;
+        }
+    }
+
+    &__thumb {
+        max-width: 120px;
+        margin: 0px auto;
+        position: relative;
+        z-index: 20;
+        margin-bottom: 34px;
+    }
+
+    &__content {
+        position: relative;
+        z-index: 20;
+
+        h3 {
+            font-size: 22px;
+            font-weight: bold;
+            letter-spacing: -1px;
+            line-height: 30px;
+            text-transform: uppercase;
+        }
+
+        p {
+            margin: 0px;
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
+}
+
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| 14. service Details
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+/*==================================================
+===| 14. service Details
+===================================================*/
+
+.service_details {
+
+    &__widget {
+
+        h4 {
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            position: relative;
+            padding-left: 22px;
+            margin-bottom: 28px;
+
+            &::before {
+                position: absolute;
+                left: 0px;
+                top: 1px;
+                height: 20px;
+                width: 2px;
+                content: '';
+                background: $primary_color_01;
+            }
+        }
+    }
+
+    &__sidebar1 {
+        border: 2px solid #E8EBEC;
+        padding: 45px 50px;
+
+        @include phone2_middle {
+            padding: 40px 25px;
+        }
+
+        @include desktop3 {
+            margin-top: 60px;
+        }
+
+        &--item {
+            position: relative;
+
+            input.form-control {
+                padding: 37px 30px;
+                border: 2px solid #E8EBEC;
+                margin-bottom: 10px;
+                font-size: 16px;
+
+                @include phone2_middle {
+                    padding: 30px 20px;
+                }
+
+                &::placeholder {
+                    color: #00235a;
+                    font-size: 16px;
+                    text-transform: none;
+                }
+            }
+
+            i {
+                position: absolute;
+                right: 30px;
+                top: 30px;
+                font-size: 14px;
+                color: $primary_color_01;
+
+                @include phone2_middle {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    &__sidebar3 {
+        border: 2px solid #E8EBEC;
+
+        ul {
+
+            li {
+                border-bottom: 2px solid #E8EBEC;
+                padding: 20px 38px;
+                position: relative;
+
+                @include last_child {
+                    border-bottom: none;
+                }
+
+                @include phone2_middle {
+                    padding: 20px 25px;
+                }
+
+                a {
+                    font-size: 20px;
+                    color: #00235a;
+                    text-transform: uppercase;
+                    letter-spacing: -1px;
+                    font-weight: bold;
+
+                    &:hover {
+                        color: $primary_color_01;
+                    }
+
+                    i {
+                        font-size: 30px;
+                        color: $primary_color_01;
+                        position: relative;
+                        bottom: -2px;
+                        margin-right: 17px;
+                    }
+                }
+
+                &>i {
+                    color: #bcd8ee;
+                    font-size: 20px;
+                    position: absolute;
+                    right: 38px;
+                    top: 27px;
+
+                    @include phone2_middle {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    &__wrapper {
+        padding-left: 20px;
+
+        @include desktop3 {
+            padding-left: 0px;
+        }
+    }
+
+    &__content {
+
+        p {
+            line-height: 26px;
+        }
+    }
+
+    &__quote {
+        background: $primary_color_01;
+        border-left: 6px solid $secondary_color_01;
+        padding: 25px 20px 35px 30px;
+        position: relative;
+        overflow: hidden;
+
+        p {
+            color: #fff;
+            position: relative;
+            z-index: 5;
+        }
+
+        &--data {
+            position: relative;
+            z-index: 5;
+
+            h6 {
+                font-size: 16px;
+                color: #fff;
+                font-weight: bold;
+                padding-left: 52px;
+                padding-top: 9px;
+            }
+        }
+
+        &--thumb1 {
+            position: absolute;
+            right: 20px;
+            top: 45px;
+            width: 145px;
+            z-index: 1;
+        }
+
+        &--thumb2 {
+            width: 40px;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+
+            img {
+                border-radius: 50px;
+            }
+        }
+    }
+
+    &__filter {
+        padding-left: 20px;
+
+        @include desktop3 {
+            padding-left: 0px;
+        }
+
+        @include tab1 {
+            display: none;
+        }
+
+        &--content {
+
+            a {
+                display: inline-block;
+
+                h6 {
+                    font-weight: 14px;
+                    color: $primary_color_01;
+                    line-height: 1;
+                    font-family: $font-primary;
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                }
+
+                h4 {
+                    font-size: 26px;
+                    color: $secondary_color_01;
+                    line-height: 1;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    letter-spacing: -1px;
+                }
+            }
+        }
+    }
+
+    &__thumb2 {
+
+        @include tab1 {
+            margin-bottom: 30px;
+        }
+    }
+}

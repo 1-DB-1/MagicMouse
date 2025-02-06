@@ -1,0 +1,405 @@
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| 20. sidebar
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+/*==================================================
+===| 20. sidebar
+===================================================*/
+
+.side_bar1 {
+    padding-left: 20px;
+
+    @include desktop3 {
+        padding-left: 0px;
+    }
+
+    @include laptop1 {
+        margin-top: 60px;
+    }
+
+    &__widget {
+        background-color: #F5FAFF;
+
+        h2 {
+            background-color: #fff;
+            padding: 16px 30px;
+            display: inline-block;
+            position: relative;
+            top: 0px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 20px;
+            text-transform: uppercase;
+            border-left: 3px solid $primary_color_01;
+        }
+    }
+
+    // About
+    &__about {
+        text-align: center;
+        margin-top: 31px;
+        padding: 0px 45px 35px;
+
+        @include desktop3_4 {
+            padding: 0px 25px 35px;
+        }
+
+        @include phone2_middle {
+            padding: 0px 25px 35px;
+        }
+
+        &--thumb {
+            width: 140px;
+            display: inline-block;
+
+            img {
+                border-radius: 100px;
+            }
+        }
+
+        &--content {
+            margin-top: 30px;
+
+            h4 {
+                font-size: 18px;
+                text-transform: uppercase;
+                margin-bottom: 14px;
+            }
+
+            p {
+                font-size: 14px;
+                line-height: 26px;
+            }
+        }
+
+        &--social {
+            margin-top: 20px;
+
+            a {
+                font-size: 14px;
+                display: inline-block;
+                color: #B3BED3;
+                margin: 0px 9px;
+
+                &:hover {
+                    color: $primary_color_01;
+                }
+            }
+        }
+    }
+
+    // Search
+    &__search {
+        padding: 38px 40px 40px;
+        position: relative;
+
+        @include desktop3_4 {
+            padding: 38px 25px 40px;
+        }
+
+        @include phone2_middle {
+            padding: 38px 25px 40px;
+        }
+
+        input {
+            border: none;
+            background-color: #fff;
+            display: inline-block;
+            padding: 18px 30px;
+            border-radius: 50px;
+            width: 100%;
+
+            &::placeholder {
+                color: $font_color_01;
+                font-size: 14px;
+            }
+        }
+
+        button {
+            position: absolute;
+            right: 40px;
+            top: 38px;
+            border: none;
+            font-size: 14px;
+            width: 60px;
+            height: 60px;
+            background-color: $primary_color_01;
+            color: #fff;
+            border-radius: 100px;
+            line-height: 60px;
+
+            @include desktop3_4 {
+                right: 25px;
+            }
+
+            @include phone2_middle {
+                right: 25px;
+            }
+        }
+    }
+
+    // News
+    &__news {
+        padding: 30px 40px 40px;
+
+        @include desktop3_4 {
+            padding: 30px 25px 40px;
+        }
+
+        @include phone2_middle {
+            padding: 30px 25px 40px;
+        }
+
+        &--item {
+            position: relative;
+            min-height: 80px;
+
+            @include not_last_child {
+                border-bottom: 1px solid #E4F0FB;
+                padding-bottom: 27px;
+                margin-bottom: 27px;
+
+                @include laptop1 {
+                    padding-bottom: 45px;
+                }
+
+                @include phone1 {
+                    padding-bottom: 27px;
+                }
+
+                @include phone2_middle {
+                    padding-bottom: 20px;
+                }
+            }
+        }
+
+        &--thumb {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 80px;
+            height: 80px;
+            z-index: 5;
+
+            @include phone2_middle {
+                height: 60px;
+                width: 60px;
+            }
+
+            img {
+                border-radius: 10px;
+            }
+        }
+
+        &--content {
+            padding-left: 100px;
+
+            @include phone2_middle {
+                padding-left: 80px;
+            }
+
+            a {
+                font-size: 12px;
+                color: $font_color_01;
+                display: inline-block;
+
+                &:hover {
+                    color: $primary_color_01;
+                }
+
+                i {
+                    color: $primary_color_01;
+                }
+
+                span {
+                    margin-left: 5px;
+
+                }
+            }
+
+            a.side_bar1__news--title {
+                display: block;
+
+                h5 {
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    line-height: 22px;
+                    transition: 0.3s;
+                    margin-top: 7px;
+
+                    &:hover {
+                        color: $primary_color_01;
+                    }
+                }
+            }
+        }
+    }
+
+    // Categories
+    &__categories {
+        padding: 30px 40px 40px;
+
+        @include desktop3_4 {
+            padding: 30px 25px 40px;
+        }
+
+        @include phone2_middle {
+            padding: 30px 25px 40px;
+        }
+
+        a {
+            background-color: $secondary_color_01;
+            color: #fff;
+            display: block;
+            height: 50px;
+            font-size: 14px;
+            position: relative;
+            padding-top: 15px;
+            padding-left: 30px;
+
+            @include not_last_child {
+                margin-bottom: 10px;
+            }
+
+            span {
+                color: #fff;
+                font-size: 14px;
+                width: 32px;
+                height: 32px;
+                background-color: #091222;
+                border-radius: 50px;
+                display: inline-block;
+                text-align: center;
+                line-height: 32px;
+                position: absolute;
+                right: 10px;
+                top: 9px;
+                transition: 0.3s;
+            }
+
+            &:hover {
+                color: $primary_color_01;
+
+                span {
+                    color: $primary_color_01;
+                }
+            }
+        }
+
+        .business {
+            background: url(../img/bg/bg-11.jpg);
+            @include bg_fixed;
+        }
+
+        .consultant {
+            background: url(../img/bg/bg-12.jpg);
+            @include bg_fixed;
+        }
+
+        .creative {
+            background: url(../img/bg/bg-13.jpg);
+            @include bg_fixed;
+        }
+
+        .ui {
+            background: url(../img/bg/bg-14.jpg);
+            @include bg_fixed;
+        }
+
+        .technology {
+            background: url(../img/bg/bg-15.jpg);
+            @include bg_fixed;
+        }
+    }
+
+    // Social
+    &__social {
+        padding: 30px 40px 40px;
+
+        @include desktop3_4 {
+            padding: 30px 20px 40px;
+        }
+
+        @include phone2_middle {
+            padding: 30px 20px 40px;
+        }
+
+        a {
+            font-size: 14px;
+            color: $secondary_color_01;
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            border-radius: 100px;
+            background-color: #fff;
+            line-height: 42px;
+            margin: 0px 3px;
+
+            &:hover {
+                background-color: $primary_color_01;
+                color: #fff;
+            }
+        }
+    }
+
+    // Instagram
+    &__instagram {
+        text-align: center;
+        padding: 20px 20px 40px;
+
+        &--thumb {
+            width: 80px;
+            display: inline-block;
+            margin: 12px 6px 0px;
+            overflow: hidden;
+
+            a {
+                position: relative;
+                display: block;
+
+                &::before {
+                    position: absolute;
+                    content: '';
+                    height: 100%;
+                    width: 100%;
+                    background-color: $primary_color_01;
+                    opacity: 0.6;
+                    left: -81px;
+                    top: -81px;
+                    transition: 0.3s;
+                }
+
+                &:hover::before {
+                    left: 0px;
+                    top: 0px;
+                }
+            }
+        }
+    }
+
+    // Tags
+    &__tags {
+        padding: 25px 20px 35px;
+
+        a {
+            display: inline-block;
+            font-size: 12px;
+            font-weight: bold;
+            color: $secondary_color_01;
+            background-color: #fff;
+            text-transform: uppercase;
+            padding: 6px 18px;
+            margin: 5px;
+            border-radius: 100px;
+
+            &:hover {
+                background-color: $primary_color_01;
+                color: #fff;
+            }
+
+        }
+    }
+}

@@ -1,0 +1,172 @@
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| 07. Button
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+/*==================================================
+===| 07. Button
+===================================================*/
+.main_btn {
+    position: relative;
+    transition: all 0.5s cubic-bezier(0.60, 0, 0.70, 1);
+    display: inline-block;
+
+    a,
+    button {
+        text-transform: capitalize;
+        color: #fff;
+        font-size: 14px;
+        position: relative;
+        display: inline-block;
+        padding: 18px 40px;
+        @include btn-font-weight;
+        z-index: 20;
+    }
+
+    button {
+        background: transparent;
+        border: none;
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 0;
+        height: 100%;
+        background: $primary_color_01;
+        width: 100%;
+        z-index: 10;
+    }
+
+    &::before {
+        z-index: 15;
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 0;
+        background: darken($primary_color_01, 5%);
+        transition: all 0.5s cubic-bezier(0.60, 0, 0.70, 1);
+    }
+
+    &:hover {
+        color: #fff;
+
+        &::before {
+            left: 0;
+            right: auto;
+            width: 100%;
+        }
+    }
+}
+
+// <div class="main_btn">
+//     <a href="#">Love you</a>
+// </div>
+
+
+////////////////////////////////////////////////////
+// btn1
+.btn1 {
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 19px 42px;
+    font-size: 14px;
+    border-radius: 3px;
+    transition: 0.3s;
+    color: #fff;
+    background: $primary_color_01;
+    // box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.14), 0 2px 8px 0 rgba(0, 0, 0, 0.10);
+    border: none;
+    font-family: $font-primary;
+    @include btn-font-weight;
+}
+
+.btn1:hover,
+.btn1:focus {
+    background: $tertiary_color_01;
+    color: #fff;
+    // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.14), 0 4px 14px 0 rgba(0, 0, 0, 0.10);
+}
+
+.btn1:focus,
+.btn1.focus {
+    outline: 0;
+}
+
+
+////////////////////////////////////////////////////
+// site__btn1
+
+.site__btn1 {
+    display: inline-block;
+    background: $primary_color_01;
+    padding: 19px 50px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: $font-primary;
+    text-transform: uppercase;
+    color: #fff;
+
+    &:hover {
+        background: $secondary_color_01;
+        color: #fff;
+    }
+}
+
+
+////////////////////////////////////////////////////
+// site__btn2
+
+.site__btn2 {
+    display: inline-block;
+    background: #fff;
+    padding: 19px 50px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: $font-primary;
+    text-transform: uppercase;
+    color: $secondary_color_01;
+    box-shadow: 0px 16px 32px 0px rgba(32, 85, 125, 0.1);
+
+    &:hover {
+        background: $secondary_color_01;
+        color: #fff;
+    }
+}
+
+
+////////////////////////////////////////////////////
+// site__btn3
+
+.site__btn3 {
+    display: inline-block;
+    background: #fff;
+    padding: 16px 46px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: $font-primary;
+    text-transform: capitalize;
+    color: $secondary_color_01;
+    border: 2px solid rgba(34, 54, 69, 0.1);
+
+    &:hover {
+        background: $primary_color_01;
+        border: 2px solid $primary_color_01;
+        color: #fff;
+    }
+
+    &.pricing__btn {
+        background: transparent;
+        border: 2px solid #1E3962;
+        color: #fff;
+
+        &:hover {
+            background: $primary_color_01;
+            border-color: $primary_color_01;
+        }
+    }
+}

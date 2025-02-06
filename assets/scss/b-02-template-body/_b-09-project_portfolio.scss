@@ -1,0 +1,564 @@
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| 15. projects
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+/*==================================================
+===| 15. projects
+===================================================*/
+
+.projects1 {
+
+    &__wrapper {
+        overflow: hidden;
+    }
+
+    &__carousel {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: '';
+            width: 5000px;
+            height: 100%;
+            background: #fff;
+            z-index: 5;
+            left: -5000px;
+            top: 0px;
+
+            @include laptop1 {
+                display: none;
+            }
+        }
+    }
+
+    &__item {
+        position: relative;
+        margin-bottom: 223px;
+
+        @include desktop3 {
+            margin-bottom: 197px;
+        }
+
+        @include laptop1 {
+            margin-bottom: 100px;
+        }
+
+        @include tab1 {
+            margin-bottom: 80px;
+        }
+    }
+
+    &.other_page2 {
+
+        .projects1__item {
+            margin-bottom: 153px;
+
+            @include laptop1 {
+                margin-bottom: 50px;
+            }
+        }
+    }
+
+    &__thumb {
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__content {
+        width: 360px;
+        position: absolute;
+        top: 305px;
+        right: 0px;
+        display: inline-block;
+        background: #fff;
+        padding: 43px 50px 43px;
+        box-shadow: 0px 16px 32px 0px rgba(32, 85, 125, 0.06);
+
+        @include desktop3 {
+            top: 205px;
+        }
+
+        @include laptop1 {
+            position: relative;
+            width: 100%;
+            top: 0px;
+            padding: 40px 30px;
+        }
+
+        @include phone2_middle {
+            padding: 40px 20px;
+        }
+
+        &--icon {
+            position: relative;
+
+            img {
+                position: absolute;
+                right: -35px;
+                top: -30px;
+
+                @include laptop1 {
+                    right: -20px;
+                    top: -25px;
+                }
+
+                @include phone2_middle {
+                    right: -10px;
+                }
+            }
+        }
+
+        &--text {
+            position: relative;
+
+            .projects1__content--title {
+
+                h5 {
+                    font-size: 16px;
+                    color: $primary_color_01;
+                    line-height: 26px;
+                    font-family: $font-primary;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    margin-bottom: 4px;
+                }
+
+                h2 {
+                    font-size: 24px;
+                    line-height: 34px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    letter-spacing: -1px;
+                    margin-bottom: 15px;
+
+                    @include phone2_middle {
+                        font-size: 20px;
+                    }
+                }
+            }
+
+            p {
+                font-size: 14px;
+                line-height: 24px;
+                margin-bottom: 11px;
+            }
+
+            .projects1__content--data {
+
+                span {
+                    display: inline-block;
+                    margin-right: 22px;
+
+                    i {
+                        color: $primary_color_01;
+                        font-size: 14px;
+                        display: inline-block;
+                        margin-right: 2px;
+                    }
+
+                    a {
+                        font-size: 14px;
+                        text-transform: uppercase;
+                        font-family: $font-primary;
+                        font-weight: bold;
+                        color: $font_color_01;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+
+    .owl-carousel .owl-stage-outer {
+        overflow: inherit;
+    }
+
+    .owl-carousel .owl-item img {
+        display: inherit;
+        width: auto;
+    }
+
+    &.other_page1 {
+        background-color: #F3FAFF;
+        overflow: hidden;
+
+        .projects1__carousel::before {
+            background-color: #F3FAFF;
+        }
+    }
+}
+
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| Projects 2
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+
+.projects2 {
+    background: #f6f9ff;
+
+    // Other Page 01
+    &.other_page1 {
+        background: url(../img/png-img/png-img-17.png);
+        @include bg_fixed;
+        background-color: $primary_color_01;
+
+        .title_style1 {
+
+            h5 {
+                color: #fff;
+                // #F37135
+            }
+
+            h2 {
+                color: #fff;
+            }
+        }
+
+        .text-border-title1 {
+            -webkit-text-stroke: 1px #fa824a;
+        }
+
+        .projects2__button-bar::before {
+            background: #fff;
+        }
+    }
+
+    // Other Page 02
+    &.other_page2 {
+        background-color: #fff;
+
+        .projects2__button-bar {
+            border: 1px solid #D6D6D6;
+        }
+    }
+
+    &__button-bar {
+        background: #fff;
+        padding: 25px 0px;
+        position: relative;
+        margin-left: 1px;
+        margin-right: 1px;
+
+        &::before {
+            position: absolute;
+            content: '';
+            left: 35px;
+            bottom: -20px;
+            height: 10px;
+            background: $primary_color_01;
+            width: calc(100% - 70px);
+        }
+    }
+
+    &__active {
+        
+        button {
+            font-size: 20px;
+            color: $font_color_01;
+            font-weight: bold;
+            font-family: $font-primary;
+            text-transform: uppercase;
+            background: #fff;
+            border: none;
+            display: inline-block;
+            margin: 0px 45px;
+
+            @include first_child {
+                margin-left: 0px;
+            }
+
+            @include last_child {
+                margin-right: 0px;
+
+                @include laptop1 {
+                    margin-top: 10px;
+                }
+
+                @include phone2_middle {
+                    margin-top: 0px;
+                }
+            }
+
+            @include desktop3 {
+                margin: 0px 20px;
+            }
+
+            @include laptop1 {
+                font-size: 18px;
+                margin: 0px 25px;
+            }
+
+            @include phone1 {
+                margin: 0px 15px;
+            }
+
+            @include phone2 {
+                font-size: 16px;
+                margin: 0px 10px;
+            }
+
+            i {
+                color: $primary_color_01;
+            }
+        }
+    }
+
+    // Project2 Item Style
+    &__item {
+        position: relative;
+        overflow: hidden;
+
+        &:hover .projects2__content {
+            opacity: 1;
+            visibility: visible;
+            left: 0px;
+            transform: scale(1);
+        }
+    }
+
+    &__content {
+        background: #fff;
+        position: absolute;
+        left: -100px;
+        top: 15px;
+        padding: 43px 45px 43px;
+        width: calc(100% - 15px);
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+        transform: scale(0.7);
+
+
+        @include desktop3 {
+            padding: 25px 30px;
+            width: 100%;
+            top: 0px;
+        }
+
+        @include laptop1 {
+            top: auto;
+            bottom: 0px;
+        }
+
+        @include phone3 {
+            padding: 20px;
+        }
+
+        &--thumb {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1;
+            width: 125px;
+        }
+
+        &--title {
+            position: relative;
+            z-index: 2;
+
+            h5 {
+                font-size: 16px;
+                color: $primary_color_01;
+                font-family: $font-primary;
+                line-height: 28px;
+                font-weight: bold;
+                text-transform: uppercase;
+                margin-bottom: 4px;
+
+                @include desktop3 {
+                    margin-bottom: 0px;
+                }
+            }
+
+
+            h2 {
+                font-size: 24px;
+                line-height: 34px;
+                color: $font_color_01;
+                font-family: $font-display;
+                font-weight: bold;
+                text-transform: uppercase;
+                letter-spacing: -1px;
+                margin-bottom: 14px;
+
+                @include desktop3 {
+                    font-size: 20px;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 24px;
+            position: relative;
+            z-index: 2;
+            margin-bottom: 11px;
+
+            @include phone3 {
+                margin: 0px;
+            }
+        }
+
+        &--data {
+            position: relative;
+            z-index: 2;
+
+            @include phone3 {
+                display: none;
+            }
+
+            span {
+
+                @include first_child {
+                    margin-right: 10px;
+                }
+
+                i {
+                    color: $primary_color_01;
+                    font-size: 14px;
+                }
+
+                a {
+                    font-size: 14px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    color: $font_color_01;
+
+                    &:hover {
+                        color: $primary_color_01;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| Projects 3
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+
+.projects3 {
+    background: #00235A;
+
+    .text-border-title1 {
+        -webkit-text-stroke: 1px rgba(244, 244, 244, 0.1);
+    }
+
+    .title_style1 {
+
+        h2 {
+            color: #fff;
+        }
+
+        @include desktop3 {
+            margin-bottom: 25px;
+        }
+    }
+
+    &__active {
+
+        button {
+            display: inline-block;
+            background: #fff;
+            text-transform: uppercase;
+            color: $font_color_01;
+            font-weight: bold;
+            font-size: 16px;
+            padding: 18px 30px;
+            border: none;
+            margin: 0px 4px;
+            transition: 0.3s;
+
+            @include tab1 {
+                margin-top: 10px;
+            }
+
+            &:hover {
+                color: #fff;
+                background: $primary_color_01;
+            }
+
+            &.active {
+                color: #fff;
+                background: $primary_color_01;
+            }
+        }
+    }
+
+    &__item {
+        position: relative;
+        overflow: hidden;
+
+        &::before {
+            position: absolute;
+            content: '';
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            background: $primary_color_01;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.4s;
+        }
+
+        &:hover .projects3__content {
+            opacity: 1;
+            visibility: visible;
+            bottom: 0px;
+        }
+
+        &:hover::before {
+            opacity: 0.9;
+            visibility: visible;
+        }
+    }
+
+    &__content {
+        position: absolute;
+        width: 100%;
+        left: 0px;
+        bottom: -35px;
+        padding: 0px 35px 35px;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s;
+
+        @include desktop3_4 {
+            padding: 0px 20px 30px;
+        }
+
+        h5 a {
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 20px;
+
+            &:hover {
+                color: $heading_color_01;
+            }
+        }
+
+        span a {
+            color: #fff;
+            font-size: 15px;
+            display: inline-block;
+            line-height: 15px;
+
+            &:hover {
+                color: $heading_color_01;
+            }
+        }
+    }
+}

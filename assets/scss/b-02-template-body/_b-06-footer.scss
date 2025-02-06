@@ -1,0 +1,338 @@
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| 10. Footer
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+/*==================================================
+===| 10. Footer
+===================================================*/
+
+.footer1 {
+
+    &__padding1 {
+        background: #001940;
+        padding: 100px 0px 45px;
+
+        @include laptop1 {
+            padding: 80px 0px 25px;
+        }
+    }
+
+    &__widget {
+
+        h3 {
+            color: #fff;
+            font-size: 24px;
+            text-transform: uppercase;
+            margin-bottom: 28px;
+        }
+    }
+
+    // Footer about section
+    &__about {
+
+        p {
+            color: #aabcd8;
+            font-size: 14px;
+            line-height: 26px;
+        }
+
+        &--item {
+            position: relative;
+            margin-top: 30px;
+
+            &-thumb {
+                position: absolute;
+                width: 54px;
+                left: 0px;
+                top: 0px;
+            }
+
+            &-content {
+                padding-left: 70px;
+
+                h5 {
+                    font-size: 20px;
+                    line-height: 1;
+                    color: #fff;
+                    text-transform: uppercase;
+                    margin-bottom: 8px;
+                }
+
+                p {
+                    font-size: 14px;
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+
+    // Footer service section
+    &__services {
+        padding-left: 20px;
+
+        @include desktop3 {
+            padding-left: 0px;
+        }
+
+        nav {
+
+            ul {
+
+                li {
+                    margin-bottom: 18px;
+
+                    a {
+                        font-size: 14px;
+                        color: #aabcd8;
+                        display: inline-block;
+
+                        &:hover {
+                            color: $primary_color_01;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Footer news section
+    &__news {
+
+        &--item {
+            position: relative;
+            margin-bottom: 13px;
+            min-height: 65px;
+
+            &-thumb {
+                position: absolute;
+                width: 60px;
+                top: 5px;
+            }
+
+            &-content {
+                padding-left: 82px;
+
+                span {
+                    color: #aabcd8;
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    margin-bottom: 6px;
+                    display: inline-block;
+
+                    i {
+                        font-size: 14px;
+                        color: $primary_color_01;
+                        margin-right: 3px;
+                    }
+                }
+
+                h5 {
+                    color: #fff;
+                    text-transform: uppercase;
+                    font-size: 16px;
+                    font-weight: 400px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+
+    &__copyright {
+        background: #00122f;
+        padding: 20px 0px;
+
+        @include tab1 {
+            padding: 30px 0px;
+        }
+
+        &--thumb {
+            width: 250px;
+            height: auto;
+
+            @include tab1 {
+                margin-bottom: 10px;
+                width: 150px;
+            }
+        }
+
+        &--text {
+
+            p {
+                font-size: 16px;
+                font-weight: bold;
+                color: #fff;
+
+                @include tab1 {
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+
+
+.footer1.home2 {
+
+
+    .footer1__padding1 {
+        background: #fff;
+        border-bottom: 1px solid #d9e8ff;
+        padding: 0px;
+    }
+
+    .footer2__border {
+        position: relative;
+        height: 100%;
+
+        &::before {
+            position: absolute;
+            content: '';
+            width: 1px;
+            height: 100%;
+            background: #d9e8ff;
+            left: 0px;
+            top: 0px;
+        }
+
+        h3 {
+            color: $heading_color_01;
+        }
+    }
+
+    .footer2__style-01 {
+        padding: 100px 15px 45px 0px;
+
+        @include desktop3 {
+            padding-right: 0px;
+        }
+
+        @include laptop1 {
+            padding: 80px 0px 0px 0px;
+        }
+
+        &.footer2__border::before {
+            display: none;
+        }
+    }
+
+    .footer2__style-02 {
+        padding: 100px 0px 45px;
+
+        @include laptop1 {
+            padding: 80px 0px 0px 0px;
+        }
+
+        @include tab1 {
+            padding: 0px;
+        }
+
+        &.footer2__border::before {
+            left: -10px;
+
+            @include desktop3 {
+                display: none;
+            }
+        }
+    }
+
+    .footer2__style-03 {
+        padding: 100px 0px 45px;
+
+        @include laptop1 {
+            padding: 0px 0px 25px 0px;
+        }
+
+        @include tab1 {
+            padding: 0px;
+        }
+
+        &.footer2__border::before {
+            left: -30px;
+
+            @include desktop3 {
+                display: none;
+            }
+        }
+    }
+
+    .footer2__style-04 {
+        padding: 100px 0px 45px 30px;
+
+        @include desktop3 {
+            padding-left: 0px;
+        }
+
+        @include laptop1 {
+            padding: 0px 0px 25px 0px;
+        }
+
+        &.footer2__border::before {
+
+            @include desktop3 {
+                display: none;
+            }
+        }
+    }
+
+    .footer1__about {
+
+        h3 {
+            color: $heading_color_01;
+        }
+
+        p {
+            color: $font_color_01;
+        }
+
+        &.footer2__border-style::before {
+            display: none;
+        }
+    }
+
+    .footer1__about--item-content {
+
+        h5 {
+            color: $heading_color_01;
+        }
+    }
+
+    .footer1__services {
+
+        nav ul li a {
+            color: $font_color_01;
+
+            &:hover {
+                color: $primary_color_01;
+            }
+        }
+    }
+
+    .footer1__news--item-content {
+
+        span {
+            color: $heading_color_01;
+        }
+
+        h5 {
+            color: $heading_color_01;
+        }
+    }
+
+    .footer1__copyright {
+        background: #fff;
+    }
+
+    .footer1__copyright--text {
+
+        p {
+            color: $font_color_01;
+        }
+    }
+}
+
+.footer1.home3 {
+    border-top: 1px solid #d9e8ff;
+}

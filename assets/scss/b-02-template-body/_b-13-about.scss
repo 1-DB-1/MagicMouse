@@ -1,0 +1,744 @@
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| 19. About
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+/*==================================================
+===| 19. About
+===================================================*/
+
+.about1 {
+    position: relative;
+
+    &__experience {
+        position: absolute;
+        top: -105px;
+        right: 80px;
+        display: inline-block;
+        width: 525px;
+        border-bottom: 4px solid $primary_color_01;
+        z-index: 500;
+        background: #fff;
+
+        @include desktop2 {
+            right: 0px;
+        }
+
+        @include tab2 {
+            width: 380px;
+            top: -70px;
+        }
+
+        @include phone2_middle {
+            display: none;
+        }
+
+        &--content {
+            padding: 45px 48px 28px;
+            position: relative;
+
+            @include tab2 {
+                padding: 30px 30px 20px;
+            }
+
+            h2 {
+                font-size: 80px;
+                color: $primary_color_01;
+                font-family: $font-primary;
+                font-weight: bold;
+                line-height: 80px;
+                letter-spacing: -7px;
+                position: absolute;
+                top: 35px;
+                left: 48px;
+
+                @include tab2 {
+                    font-size: 60px;
+                    line-height: 45px;
+                    letter-spacing: -4px;
+                }
+
+                span {
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+            }
+
+            i {
+                position: absolute;
+                right: 20px;
+                top: 20px;
+                font-size: 62px;
+                color: rgba(0, 0, 0, 0.04);
+            }
+
+            .about1_experience_text {
+                padding-left: 105px;
+
+                h4 {
+                    font-size: 16px;
+                    font-family: $font-primary;
+                    font-weight: bold;
+                    color: $secondary_color_01;
+                    text-transform: uppercase;
+                    margin-bottom: 2px;
+
+                    @include tab2 {
+                        font-size: 15px;
+                    }
+                }
+
+                h3 {
+                    font-size: 40px;
+                    font-family: $font-display;
+                    font-weight: bold;
+                    color: $secondary_color_01;
+                    text-transform: uppercase;
+
+                    @include tab2 {
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+    }
+
+
+    &__title-right {
+        position: relative;
+        padding-right: 100px;
+
+        @include desktop3 {
+            padding-right: 0px;
+        }
+
+        &::before {
+            position: absolute;
+            content: '';
+            left: 0px;
+            top: 20px;
+            width: 2px;
+            height: 120px;
+            background: #e4e4e4;
+        }
+
+        p {
+            padding-left: 35px;
+            font-size: 18px;
+            padding-top: 24px;
+            line-height: 28px;
+
+            @include phone2 {
+                padding-top: 13px;
+                padding-left: 20px;
+            }
+        }
+    }
+
+    &__item {
+        padding: 55px 25px 50px 36px;
+        transition: .3s;
+        position: relative;
+        background-color: #fff;
+        border-bottom: 0px solid $primary_color_01;
+
+        &::before {
+            position: absolute;
+            content: '';
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            transition: .3s;
+            z-index: 1;
+        }
+
+        &:hover {
+
+            &::before {
+                background-color: #fff;
+                width: calc(100% + 20px);
+                height: calc(100% + 20px);
+                top: -10px;
+                left: -10px;
+                background-color: #fff;
+                box-shadow: 0px 30px 40px 0px rgba(32, 85, 125, 0.06);
+                border-bottom: 4px solid $primary_color_01;
+            }
+        }
+
+        &--wrapper {
+            border: 2px solid #f4f4f4;
+            margin-top: 83px;
+            position: relative;
+
+            &::before {
+                position: absolute;
+                content: '';
+                left: 40px;
+                top: -30px;
+                right: 40px;
+                height: 10px;
+                background-color: $primary_color_01;
+            }
+        }
+    }
+
+    &__thumb {
+        position: relative;
+
+        img {
+            width: 90px;
+            height: 90px;
+            z-index: 3;
+            position: relative;
+        }
+
+        span {
+            position: absolute;
+            font-family: $font-primary;
+            font-weight: bold;
+            font-size: 150px;
+            text-transform: uppercase;
+            line-height: 150px;
+            color: transparent;
+            -webkit-text-stroke: 1px #f4f4f4;
+            right: 0px;
+            top: -22px;
+            z-index: 2;
+
+        }
+    }
+
+    &__content {
+        margin-top: 90px;
+        position: relative;
+        z-index: 5;
+
+        h3 {
+            font-size: 24px;
+            line-height: 36px;
+            font-family: $font-display;
+            color: $font_color_01;
+            text-transform: uppercase;
+        }
+    }
+
+    &.other_page1 {
+
+        .about1__item--wrapper {
+            margin-top: 28px;
+        }
+    }
+}
+
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| 00. 
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+
+.about2 {
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 1px;
+        background: #ebebeb;
+        top: 125px;
+        left: 0px;
+        z-index: -1;
+
+        @include desktop3 {
+            top: 109px;
+        }
+    }
+
+    &::after {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 1px;
+        background: #ebebeb;
+        top: 219px;
+        left: 0px;
+        z-index: -1;
+        display: none;
+
+        @include laptop1 {
+            display: block;
+        }
+    }
+
+    .tab-style-01 {
+
+        .nav-tabs {
+            border-bottom: none;
+        }
+
+        .nav-tabs .nav-link {
+            border-radius: 0px;
+            margin: 0px;
+            width: 25%;
+            border: none;
+            border-bottom: 4px solid transparent;
+            transition: 0s;
+
+            @include desktop3 {
+                padding: 0px;
+            }
+
+            @include laptop1 {
+                width: 50%;
+            }
+
+            @include phone2 {
+                width: 100%;
+            }
+        }
+
+        .nav-tabs .nav-item.show .nav-link,
+        .nav-tabs .nav-link.active {
+            border: none;
+            border-bottom: 4px solid $primary_color_01;
+            background: url(../img/png-img/png-img-04.png);
+            @include bg_fixed;
+        }
+    }
+
+    // Tab Title Style
+    &__tab-item {
+        position: relative;
+        padding: 29px 20px 24px 65px;
+
+        @include desktop3 {
+            padding: 29px 20px 24px 20px;
+        }
+    }
+
+    &__tab-thumb {
+        position: absolute;
+        top: 30px;
+        left: 10px;
+
+        @include desktop3 {
+            display: none;
+        }
+
+        i {
+            color: $primary_color_01;
+            font-size: 42px;
+        }
+    }
+
+    &__tab-content {
+
+        h4 {
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        p {
+            margin: 0px;
+            font-size: 16px;
+        }
+    }
+
+    .tab-border-bottom {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: '';
+            width: 300%;
+            height: 1px;
+            background: #ebebeb;
+            top: 109px;
+            left: -50px;
+            z-index: -1;
+            display: none;
+
+            @include phone2 {
+                display: block;
+            }
+        }
+    }
+
+    // Tab Body Style
+    &__body {
+        padding: 120px 0px 120px;
+
+        @include desktop3 {
+            padding: 100px 0px;
+        }
+
+        @include tab1 {
+            padding: 80px 0px;
+        }
+    }
+
+    &__left {
+        position: relative;
+
+        &-thumb {
+            padding-left: 45px;
+            margin-bottom: 95px;
+
+            @include laptop1 {
+                margin-bottom: 155px;
+            }
+
+            @include phone2 {
+                margin-bottom: 0px;
+                padding-left: 0px;
+            }
+        }
+
+        &-content {
+            width: 310px;
+            position: absolute;
+            left: 0px;
+            bottom: -95px;
+            background: #fff;
+            box-shadow: 0px 30px 40px 0px rgba(32, 85, 125, 0.06);
+            padding: 58px 44px 55px;
+            border-top-right-radius: 200px;
+            border-bottom: 4px solid $primary_color_01;
+
+            @include phone2 {
+                position: static;
+                width: 100%;
+                padding: 35px 30px 30px;
+                margin-bottom: 60px;
+                border-top-right-radius: 0px;
+            }
+
+            &-icon {
+                position: relative;
+                margin-bottom: 98px;
+
+                @include phone2 {
+                    margin-bottom: 50px;
+                }
+
+                img {
+                    width: 90px;
+                    z-index: 5;
+                    position: relative;
+                }
+
+                span {
+                    position: absolute;
+                    font-family: $font-primary;
+                    font-weight: bold;
+                    font-size: 150px;
+                    text-transform: uppercase;
+                    line-height: 150px;
+                    color: transparent;
+                    -webkit-text-stroke: 1px #f4f4f4;
+                    right: 0px;
+                    top: 2px;
+                    z-index: 1;
+                    letter-spacing: -3px;
+                }
+            }
+
+            &-title {
+
+                h3 {
+                    position: relative;
+                    z-index: 5;
+                    text-transform: uppercase;
+                    font-size: 24px;
+                    letter-spacing: -1px;
+                    line-height: 36px;
+
+                    @include phone3 {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__right {
+        padding-left: 25px;
+        padding-top: 62px;
+
+        @include desktop3 {
+            padding-left: 0px;
+            padding-top: 0px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 28px;
+            margin-bottom: 37px;
+
+            @include desktop3 {
+                font-size: 16px;
+                line-height: 26px;
+            }
+        }
+    }
+}
+
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| 00. 
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+
+.about3 {
+    position: relative;
+
+    &__content {
+
+        p {
+            font-size: 18px;
+            line-height: 28px;
+            margin-bottom: 30px;
+            padding-right: 40px;
+
+            @include desktop3 {
+                padding-right: 0px;
+            }
+        }
+    }
+
+    &__thumb2 {
+        position: absolute;
+        left: 0px;
+        top: 120px;
+        z-index: -1;
+    }
+
+    &__thumb3 {
+        position: absolute;
+        right: 10px;
+        bottom: 0px;
+        z-index: -1;
+    }
+}
+
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| 00. 
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+
+.about4 {
+    position: relative;
+    overflow: hidden;
+
+    &__thumb-area {
+        position: relative;
+        padding-bottom: 265px;
+
+        @include phone1 {
+            padding-bottom: 0px;
+        }
+    }
+
+    &__thumb1 {
+
+        img {
+
+            @include phone1 {
+                width: 100%;
+            }
+        }
+    }
+
+    &__thumb2 {
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        z-index: 5;
+
+        @include phone1 {
+            display: none;
+        }
+    }
+
+    &__thumb3 {
+        position: absolute;
+        left: 0px;
+        bottom: -235px;
+        width: 100%;
+
+        @include desktop2 {
+            bottom: 0px;
+        }
+
+        @include phone1 {
+            display: none;
+        }
+    }
+
+    &__content {
+        padding-left: 30px;
+
+        @include desktop3 {
+            padding-left: 0px;
+        }
+
+        @include laptop1 {
+            margin-top: 60px;
+        }
+
+        .title_style1 {
+            margin-bottom: 17px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 28px;
+            padding-right: 100px;
+            margin-bottom: 0px;
+
+            @include desktop3 {
+                padding-right: 0px;
+            }
+        }
+    }
+
+    &__experience {
+
+        @include phone2 {
+            display: none;
+        }
+
+        &--content {
+            background: #fff;
+            border-bottom: 4px solid $primary_color_01;
+            box-shadow: 0px 20px 40px 0px rgba(255, 94, 20, 0.3);
+            position: relative;
+            z-index: 1;
+            padding: 43px 20px 30px 0px;
+
+            h2 {
+                font-size: 80px;
+                letter-spacing: -6px;
+                color: $primary_color_01;
+                line-height: 65px;
+                font-weight: bold;
+                font-family: $font-primary;
+                position: absolute;
+                top: 43px;
+                left: 50px;
+                z-index: 10;
+
+                span {
+                    font-size: 16px;
+                }
+            }
+
+            i {
+                position: absolute;
+                right: 20px;
+                top: 20px;
+                font-size: 60px;
+                color: #f4f4f4;
+                z-index: 5;
+            }
+
+            .about4_experience_text {
+                padding-left: 155px;
+
+                h4 {
+                    font-size: 16px;
+                    line-height: 1;
+                    font-family: $font-primary;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                }
+
+                h3 {
+                    font-size: 40px;
+                    line-height: 1;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| 00. 
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+
+.about5 {
+
+    &__wrapper {
+        padding-left: 30px;
+
+        @include desktop3 {
+            padding-left: 0px;
+        }
+
+        @include tab1 {
+            margin-top: 60px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 26px;
+        }
+    }
+}
+
+#progress-elements {
+    margin-top: 45px;
+}
+
+.progress-skill {
+    margin-top: 27px;
+
+    h4 {
+        color: $heading_color_01;
+        font-size: 16px;
+        text-transform: capitalize;
+        margin-bottom: 17px;
+        font-family: $font-primary;
+    }
+
+    .progress {
+        height: 6px;
+        border-radius: 0;
+        background: #efefef;
+        overflow: visible;
+    }
+
+    .progress-bar {
+        background-color: $primary_color_01 !important;
+        position: relative;
+
+        span {
+            position: absolute;
+            font-size: 16px;
+            font-weight: 100;
+            background: #fff;
+            color: $primary_color_01;
+            font-family: $font-primary;
+            font-weight: bold;
+            padding: 3px;
+            left: 97%;
+            top: -40px;
+        }
+    }
+}

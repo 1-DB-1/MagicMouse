@@ -1,0 +1,384 @@
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| 17. Testimonial
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+/*==================================================
+===| 17. Testimonial
+===================================================*/
+
+.testimonial1 {
+
+    &__carousel {
+        background: url(../img/png-img/png-img-07.png);
+        @include bg_fixed;
+        padding: 72px 80px 70px;
+        box-shadow: 0px 16px 32px 0px rgba(255, 94, 20, 0.3);
+
+        @include laptop1 {
+            padding: 50px 30px 43px;
+        }
+
+        @include phone2 {
+            padding: 40px 30px 33px;
+        }
+
+        @include phone3 {
+            padding: 40px 20px 33px;
+        }
+    }
+
+    &__item {
+        position: relative;
+    }
+
+    &__thumb {
+        position: absolute;
+        left: 0px;
+        top: 8px;
+        width: 120px;
+        border: 8px solid #fff;
+
+        @include laptop1 {
+            width: 80px;
+            border: 5px solid #fff;
+            top: 5px;
+        }
+    }
+
+    &__content {
+        padding-left: 150px;
+
+        @include laptop1 {
+            padding-left: 100px;
+        }
+
+        @include phone2 {
+            padding-left: 0px;
+            padding-top: 100px;
+        }
+
+        p {
+            font-size: 24px;
+            line-height: 36px;
+            color: #fff;
+            margin-bottom: 22px;
+
+            @include laptop1 {
+                font-size: 16px;
+                line-height: 26px;
+            }
+
+            @include phone3 {
+                font-size: 15px;
+            }
+        }
+
+        h4 {
+            font-size: 30px;
+            line-height: 30px;
+            color: #fff;
+            text-transform: uppercase;
+            margin: 0px;
+
+            @include laptop1 {
+                font-size: 24px;
+            }
+
+            @include phone2_middle {
+                font-size: 22px;
+            }
+        }
+
+        h5 {
+            font-size: 16px;
+            line-height: 36px;
+            font-family: $font-primary;
+            color: #fff;
+            text-transform: uppercase;
+            margin: 0px;
+        }
+    }
+
+    &__dots-style {
+        position: relative;
+
+        .owl-dots {
+            position: absolute;
+            bottom: 77px;
+            right: 80px;
+
+            @include laptop1 {
+                bottom: 50px;
+            }
+
+            @include tab1 {
+                display: none;
+            }
+        }
+
+        .owl-dots .owl-dot.active span,
+        .owl-dots .owl-dot:hover span {
+            // Active dot color
+            background: #fff;
+        }
+
+        .owl-dots .owl-dot span {
+            width: 20px;
+            height: 6px;
+            border-radius: 0px;
+            background: rgba(255, 255, 255, 0.4);
+            margin: 0px 5px;
+        }
+    }
+}
+
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| 00. 
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+
+.testimonial2 {
+    overflow: hidden;
+
+    &__item {
+        position: relative;
+        background: url(../img/png-img/png-img-08.png);
+        @include bg_fixed;
+        padding: 107px 60px 45px;
+        box-shadow: 0px 10px 15px 0px rgba(255, 94, 20, 0.3);
+        margin-left: 15px;
+        margin-right: 15px;
+
+        @include phone1 {
+            padding: 90px 60px 45px;
+        }
+
+        @include phone2 {
+            margin-left: 0px;
+            margin-right: 0px;
+            padding: 140px 40px 40px;
+            margin-top: 0px;
+            box-shadow: none;
+            margin-bottom: 0px;
+        }
+
+        @include phone2_middle {
+            padding: 140px 20px 40px;
+        }
+    }
+
+    &__thumb {
+        position: absolute;
+        left: 60px;
+        top: -60px;
+        width: 113px;
+        border: 8px solid #fff;
+
+        @include phone2 {
+            top: 40px;
+            left: 40px;
+            width: 80px;
+            border: 4px solid #fff;
+        }
+
+        @include phone2_middle {
+            left: 20px;
+        }
+    }
+
+    &__content {
+         
+        p {
+            color: #fff;
+            font-size: 22px;
+            line-height: 36px;
+            margin-bottom: 25px;
+
+            @include phone2 {
+                font-size: 18px;
+                line-height: 28px;
+                margin-bottom: 15px;
+            }
+        }
+
+        &--data {
+
+            h4 {
+                font-size: 26px;
+                line-height: 36px;
+                color: #fff;
+                text-transform: uppercase;
+                margin-bottom: 2px;
+
+                @include phone2 {
+                    font-size: 22px;
+                }
+            }
+
+            span {
+                font-size: 16px;
+                line-height: 26px;
+                color: #fff;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    &__dots-style {
+        position: relative;
+
+        .owl-dots {
+            margin: 0px !important;
+
+            @include tab1 {
+                display: none;
+            }
+        }
+
+        .owl-dots .owl-dot.active span,
+        .owl-dots .owl-dot:hover span {
+            // Active dot color
+            background: $primary_color_01;
+        }
+
+        .owl-dots .owl-dot span {
+            width: 20px;
+            height: 6px;
+            border-radius: 0px;
+            background: #B2BDCC;
+            margin: 0px 5px;
+        }
+    }
+}
+
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| 00. 
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+
+.testimonial3 {
+    position: relative;
+    top: -68px;
+    z-index: 50;
+    margin-bottom: -68px;
+
+    @include laptop1 {
+        top: 0px;
+        background: $secondary_color_01;
+        margin-bottom: 0px;
+    }
+
+    &__carousal {
+
+        &::before {
+            position: absolute;
+            content: '';
+            width: 5000px;
+            height: 100%;
+            right: -60px;
+            top: 0px;
+            background: $secondary_color_01;
+            z-index: 100;
+            transform: skew(-18deg);
+
+            @include laptop1 {
+                display: none;
+            }
+        }
+    }
+
+    &__item {
+        padding: 95px 145px 93px 100px;
+        position: relative;
+        z-index: 200;
+
+        @include desktop1_middle {
+            padding: 70px 100px 70px 80px;
+        }
+
+        @include desktop2 {
+            padding: 65px 20px 65px 60px;
+        }
+
+        @include laptop1 {
+            padding: 60px;
+        }
+
+        @include phone1 {
+            padding: 50px 30px;
+        }
+    }
+
+    &__thumb {
+        position: absolute;
+        top: 20px;
+        right: 105px;
+    }
+
+    &__content {
+
+        p {
+            color: #b7c8e3;
+            font-size: 18px;
+            line-height: 28px;
+            margin-bottom: 30px;
+
+            @include phone2_middle {
+                font-size: 16px;
+                line-height: 26px;
+            }
+        }
+    }
+
+    &__data {
+
+        h4 {
+            color: #fff;
+            font-size: 40px;
+            line-height: 1;
+            font-weight: bold;
+            letter-spacing: -2px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+
+            @include phone2 {
+                font-size: 25px;
+                letter-spacing: 0px;
+            }
+        }
+
+        span {
+            color: $primary_color_01;
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+    }
+
+    &__sponsor {
+        background: $primary_color_01;
+        position: relative;
+        top: 67px;
+        padding: 90px 50px 90px 90px;
+        max-height: 300px;
+
+        @include laptop1 {
+            top: 0px;
+            padding: 80px 0px;
+        }
+
+        @include laptop1 {
+            padding: 60px 0px;
+        }
+
+        @include phone2 {
+            padding: 60px 20px;
+        }
+    }
+}

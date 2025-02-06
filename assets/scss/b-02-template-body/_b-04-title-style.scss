@@ -1,0 +1,96 @@
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| 08. Title Style
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+/*==================================================
+===| 08. Title Style
+===================================================*/
+// text-border-title1
+.text-border-title1 {
+    position: absolute;
+    font-family: $font-display;
+    font-size: 300px;
+    text-transform: uppercase;
+    line-height: 300px;
+    color: transparent;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-text-stroke: 1px rgb(244, 244, 244);
+    top: 60px;
+
+    @include desktop4 {
+        font-size: 200px;
+    }
+
+    @include tab1 {
+        display: none;
+    }
+
+    &.features1-style {
+        top: -25px;
+
+        &.home2 {
+            -webkit-text-stroke: 1px #DAE7FF;
+        }
+
+        @include desktop1_middle {
+            font-size: 240px;
+            line-height: 240px;
+            top: -15px;
+        }
+
+        @include desktop3 {
+            font-size: 180px;
+            line-height: 180px;
+            top: -10px;
+        }
+
+        @include laptop2 {
+            font-size: 120px;
+            line-height: 120px;
+            top: 0px;
+        }
+
+        @include tab1 {
+            display: none;
+        }
+    }
+
+}
+
+
+// title_style1
+.title_style1 {
+
+    h5 {
+        font-size: 16px;
+        font-family: $font-primary;
+        color: $primary_color_01;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 14px;
+    }
+
+    h2 {
+        font-size: 60px;
+        color: $secondary_color_01;
+        font-family: $font-display;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: -2px;
+        line-height: 70px;
+
+        @include phone1 {
+            font-size: 45px;
+            line-height: 55px;
+            letter-spacing: -1px;
+        }
+
+        @include phone2_middle {
+            font-size: 35px;
+            line-height: 45px;
+        }
+    }
+}
